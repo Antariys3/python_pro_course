@@ -13,7 +13,7 @@ def index():
     return render_template("index.html")
 
 
-@app.route("/requirements/")
+@app.route("/requirements")
 def requirements():
     with open("requirements.txt", "r") as file:
         lines = file.readlines()
